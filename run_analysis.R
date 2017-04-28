@@ -20,7 +20,6 @@ data <- rbind(data_train, data_test)
 activityLabels <- read.table("UCI HAR Dataset/activity_labels.txt")
 # Load features
 features <- read.table("UCI HAR Dataset/features.txt")
-#Load trainning data and test data
 
 # filter out the features
 features_filterd <- grep(".*mean.*|.*std.*", features[,2])
