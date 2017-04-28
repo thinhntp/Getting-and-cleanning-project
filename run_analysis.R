@@ -26,7 +26,7 @@ features <- read.table("UCI HAR Dataset/features.txt")
 features_filterd <- grep(".*mean.*|.*std.*", features[,2])
 
 # filter out the data
-# noticed that the indexs of feature_filter were pushed back to the right 2 
+# noticed that the indexs of feature_filter in data were pushed back to the right 2 
 # colume after we add activity and subject into data
 data<-cbind(data[,c(1,2)],data[,features_filterd+2])
 
